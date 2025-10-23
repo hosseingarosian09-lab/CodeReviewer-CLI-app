@@ -12,3 +12,15 @@ Output Format: Return the results in the following format:
 - Cleanliness Rating: Provide the cleanliness score (1-10) with a brief explanation.
 - Syntax Errors Fixed: List any syntax errors found and the corrections made. If none, state "No syntax errors found."
 """
+
+ollama.create(model='jarvis', from_='phi3:mini', system=system_prompt)
+
+
+stream = chat(
+    model='jarvis',
+    messages=[{'role': 'user', 'content': ''}],
+    stream=True,
+)
+
+for chunk in stream:
+  print(chunk['message']['content'], end='', flush=True)

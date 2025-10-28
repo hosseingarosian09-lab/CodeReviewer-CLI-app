@@ -1,6 +1,6 @@
 # CodeReviewer-CLI-app
 
-A simple CLI tool in Python that acts as your personal code reviewer, powered by Ollama’s `phi3:mini` model. Dubbed "Jarvis," it helps spot typos, rates code cleanliness, and fixes syntax errors—perfect for offline practice after my Python basics.
+A simple CLI tool in Python that acts as your personal code reviewer, powered by Ollama’s `mistral:7b` model. Dubbed "Jarvis," it helps spot typos, rates code cleanliness, and fixes syntax errors—perfect for offline practice after my Python basics.
 
 ## Features
 - Interactive code review via terminal input.
@@ -12,9 +12,9 @@ A simple CLI tool in Python that acts as your personal code reviewer, powered by
 
 ## Prerequisites
 - Python 3.8+ (check with `python --version`).
-- Ollama installed from [ollama.com](https://ollama.com). Pull `phi3:mini`:
+- Ollama installed from [ollama.com](https://ollama.com). Pull `mistral:7b`:
   ```sh
-  ollama pull phi3:mini
+  ollama pull mistral:7b
   ```
   Start server: `ollama serve` before running.
 

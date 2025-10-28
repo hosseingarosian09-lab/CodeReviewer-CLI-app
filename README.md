@@ -16,7 +16,11 @@ A simple CLI tool in Python that acts as your personal code reviewer, powered by
   ```sh
   ollama pull mistral:7b
   ```
-  Start server: `ollama serve` before running.
+- Start server: `ollama serve` before running.
+
+Note about the Ollama app and server:
+- If you use the Ollama desktop app, close the app before running this CLI to avoid port or process conflicts. Keep the desktop app closed unless you encounter HTTP 503 errors from the local Ollama server.
+- Always run `ollama serve` in a separate terminal window (not inside the same session where you run the CLI) so the server stays active while you use this tool.
 
 ## Installation
 1. Clone the repo:

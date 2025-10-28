@@ -25,7 +25,7 @@ while True:
     print("Processing...")
 
     stream = chat(
-        model='phi3:mini',
+        model='mistral:7b',
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": code},
